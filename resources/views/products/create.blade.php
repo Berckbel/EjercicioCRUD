@@ -9,6 +9,8 @@
             <a href="{{ route('products.index') }}" class="btn btn-light pull-right">Listado</a>
         </h2>
 
+        @include('products.fragment.error')
+
         {!! Form::open(['route'=>'products.store','method'=>'POST']) !!}
 
         @include('products.fragment.form')

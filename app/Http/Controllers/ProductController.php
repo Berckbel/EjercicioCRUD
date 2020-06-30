@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Product;
+use App\Http\Requests\ProductRequest;
 
 use Illuminate\Http\Request;
 
@@ -32,5 +33,13 @@ class ProductController extends Controller
 
     public function create(){
         return view('products.create');
+    }
+
+    public function store(ProductRequest $request){
+        return 'Producto Guardado';
+    }
+
+    public function update(ProductRequest $request, $id){
+        return 'Producto Actualizado' . $id;
     }
 }
