@@ -14,9 +14,7 @@
             <div class="col-xs-12">
                 <h1 class="page-header text-center">CRUD Laravel</h1>
             </div>
-
             @yield('content')
-
         </div>
     </div>
 
